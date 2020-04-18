@@ -41,9 +41,9 @@ export const authCheck = (expireTime) => {
 export const auth = (email, password, isSignUp) => {
     return dispatch => {
         dispatch(authStart());
-        let url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyA0z1VUgXKFxa6614xaC3bwpqo5sKleMZI';
+        let url = 'YOUR_URL';
         if(!isSignUp) {
-            url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyA0z1VUgXKFxa6614xaC3bwpqo5sKleMZI';
+            url = 'YOUR_URL';
         }
         const authData = {
             email: email,
